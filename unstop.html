@@ -1,0 +1,501 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta charset="utf-8">
+
+<!-- Description, Keywords and Author -->
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>:: ICC ::</title>
+<link rel="shortcut icon" href="images/bclublogo_white.png" type="image/x-icon">
+
+<!-- style -->
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="head page.css">
+
+<!-- style -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<link href="css/buttonstyle.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+<!-- bootstrap -->
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/Accordian.css" rel="stylesheet">
+<!-- responsive -->
+
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- font-awesome -->
+
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Slider -->
+
+<link href="css/jquery.fadeshow-0.1.1.min.css" rel="stylesheet">
+
+<style>
+  @media(max-width:767px)
+  {#topnav
+  {
+    display:inline;
+  }
+  @media(max-width:422px)
+  {#topnav
+  {
+    text-align: center !important;
+  }
+  @media(max-width:682px)
+{
+
+	h1#bclub.headalign{
+		padding-left:-5vw !important;
+	}
+	
+}
+}}
+@media(max-width:450px)
+{
+	#modalcontainer
+	{
+		margin-left:-8% !important;
+	}
+	.other-page article p {
+		font-size: 10px;
+		line-height: 27px;
+		color: #FFF;
+		padding: 0;
+		margin: 0;
+		width: 320px;
+		padding-bottom: 27px;
+	}
+	h2#bclub
+	{
+		margin-left:-2% !important;
+	}
+}
+</style>
+<style>
+  /* *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  }    */
+  .m3{
+      width: 100%;
+      /* height: 100vh; */
+      display: flex;
+      /* flex-direction: column;
+      align-items: center; */
+      /* justify-content: center; */
+      /* background: #222; */
+      color: white;
+      flex-wrap: wrap;
+      align-content: space-between;
+      /* flex-direction: row; */
+      justify-content: space-evenly;
+      /* margin-bottom: 80%; */
+  }
+  
+  /* h2{
+      font-size: 30px;
+      margin: 15px;
+      font-weight: 600;
+      color: black;
+  } */
+  
+  .container_team{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+  }
+  
+  .container_team .card{
+      width: 260px;
+      margin: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      transition: 0.3s;
+      color: white;
+  }
+  
+  .container_team .card:hover{
+      background: rgb(30, 184, 216);
+      color: white;
+  }
+  
+  .container_team .card .content{
+      transition: 0.3s;
+      color: white;
+  }
+  
+  .container_team .card .content:hover{
+      transform: scale(1.06);
+      color: white;
+  }
+  
+  .container_team .card .profile{
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 20px auto;
+      border: 5px solid black;
+      color: white;
+  }
+  
+  .container_team .card .profile img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      color: white;
+  }
+  
+  .container_team .card .detail h2,
+  .container_team .card .detail h4{
+      margin: 10px 0;
+      color: white;
+  }
+  
+  .container_team .card .social{
+      margin: 15px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: white;
+  }
+  
+  .container_team .card .detail .social a{
+      margin: 8px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      /* line-height: 40px; */
+      text-align: center;
+      transition: 0.2s;
+      color: white;
+      padding: 9px;
+  }
+  
+  .container_team .card .social a:hover{
+      background: #222;
+      color: white;
+  }
+  
+  .container_team .card .social a i{
+      font-size: 21px;
+      color: white;
+  }
+  
+  </style>
+
+
+<body style="background-image: url('images/bg-1.jpg');">
+    
+    <header role="main-header" id="header">
+        <div id="topnav"> 
+          <!-- Logo -->
+          <h1 id="bclub" class="headalign">
+            <a id="blogo" href="index.html" title="Floxi">
+              <img id="whitelogo" style="height: 55px; width: 60px;" src="images/whitelogo.png" alt="BClub"/>
+            </a>&nbsp;
+            <span id="headertext">
+              <span id="businesstext"  style="font-size: 50px;">
+                <span id="Binlogo" style="font-size: 50px;">B</span>usiness
+              </span>
+              <span id="clubtext" style="font-size: 50px;">Club</span>
+            </span>
+        </h1>
+    </div>
+  </header>
+  <div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column; gap: 3vh; margin-top: 100px;">
+    <div style="width: max(30vw,200px); @media (max-width: 767px) {
+      position: relative !important;
+    } " >
+    
+      <a
+        id="areg" 
+        href="https://unstop.com/competitions/indian-case-challenge-2025-icc-kshitij-2025-iit-kharagpur-1301204" 
+        title="Register Now" 
+        target="_blank"
+        style="
+        width: 100%;
+        height: 50px;
+        padding: 0 !important;
+        line-height: 46px;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 15px;
+        border: 3px solid #1eb8d8;
+        color: white;
+        font-size: 20px;
+        font-family: arial;
+        position: relative;
+        overflow: hidden;
+        background-color: #111;
+        text-transform: uppercase;
+        display: inline-block; width: 100%; height: auto; background-color: #1c4980; display: block;"
+      >
+        <img 
+          src="images/unstop.jpg" 
+          alt="Register Now" 
+          style="width: 100%; max-height: 180px; object-fit: contain; transition: transform 0.3s ease;"
+          class="hover-grow"
+        >
+      </a>
+      
+    
+  </div>
+  
+  <style>
+    /* Hover effect for the image */
+    .hover-grow:hover {
+      transform: scale(1.1); /* Scales the image to 110% of its size */
+    }
+    @media (max-width: 768px) {
+#reghover {
+width: 200px !important;
+
+}
+}
+
+  </style>
+
+<div style="color: #FFF; font-size: max(1.5vw,15px); font-weight: 800;">Click above to Register on Unstop!</div>
+
+  <div class="container" id="modalcontainer" style="display: flex !important; justify-content: center !important; margin: 0 !important;" >
+    <div id="modalrow" class="row" style="margin-top: max(100px, 20vh) !important; padding: 0 !important; float: none !important; display: flex; gap: max(8vw,50px);">
+    
+            <!-- Modal - 1 -->
+      
+            <!-- Button trigger modal -->
+          
+      
+      
+        <div data-toggle="modal" data-target="#myModal1" id="wrapper"   class="col-md-5 col-xs-6" style="margin: 0; width: max(16.5vw,120px) !important;">
+            <a href="#">Format</a>
+        </div>
+
+        
+      
+      
+      
+      
+      
+      
+        <!-- Modal - 2 -->
+        
+        <div role="rules" data-toggle="modal" data-target="#myModal2" id="wrapper"   class="col-md-5 col-xs-6" style="margin: 0; width: max(16.5vw,120px) !important;">
+          <a href="#">Rules</a>
+        </div>
+    </div>
+
+  </div>
+
+
+
+
+<div class="modal fade" id="myModal1" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Format</strong></h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                
+                <h4 class="modaltext">
+                 
+                  
+                  The event will be conducted in two stages	
+
+                  <br><br><br>
+                  <strong>Stage 1: Prelims</strong>
+                  <br><br>
+                  <div id="rules">
+                    <ul>
+                      <li>The preliminary problem statement will be sent to the participating teams once they register on the portal.</li>
+                      <li>The dates for registrations will be declared soon. All participants must strictly abide by them.</li>
+                      <li>The result of the prelims will be communicated through email, and the final list of qualified teams will be announced through Business Club, IIT Kharagpur's social media pages, after which we shall move to Stage 2.
+                      </li>
+                      <!-- <li>The list of qualifying teams will be released through all of Business Club, IIT Kharagpur’s social media pages after which we shall move to Stage 2.</li>    -->
+                    </ul>
+                  </div>
+
+                  <br>
+                  <strong>Stage 2: Finals</strong>
+                  <br><br>
+                  <div id="rules">
+                    <ul>
+                      <li>All the shortlisted teams shall receive the final case.</li>
+                      <li>The finalists would present their solution for the final case during Kshitij (Tentatively the third week of January), 2026.</li>
+                      <li>Under no circumstances will a modification of team members be permitted, once the preliminary solution is submitted.</li>
+                      
+                    </ul>
+                  </div>
+
+                
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog modal-lg">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Rules</strong></h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                <h4 class="modaltext">
+
+                <br>       
+                
+                <div id="rules">
+                <ul>
+                  <li>Prior registration is mandatory for participation.</li><br><br>
+                  <li>Each team must have at least 3 and at most 6 members.</li><br><br>
+                  <li>Students from different colleges can be in the same team.</li><br><br>
+                  <li>Both undergraduate and postgraduate students are allowed to participate.</li><br><br>
+                  <li>Teams must mention the names of the members, their respective colleges and contact details on the first page of the report.</li><br><br>
+                  <li>Plagiarism will not be tolerated.</li><br><br>
+                  <li>All decisions made by the judges and Business Club, IIT Kharagpur will be final and binding.</li><br><br>
+                  
+                </ul>
+
+                
+                  <!-- Online registration is mandatory for participation. <br><br><br>
+                  Each team must have at least 1 and at most 5 members <br><br><br>
+                  Students from different colleges can be in the same team. <br><br><br>
+                  Both undergraduate and postgraduate students are allowed to participate. <br><br><br>
+                  Teams must mention the names of the members, their respective colleges and contact details on the first page of the report. <br><br><br>
+                  Plagiarism will not be tolerated. <br><br><br>
+                  All decisions made by the judges and Business Club, IIT Kharagpur will be final and binding. <br><br>
+                   -->
+                </div>
+
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+  
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<script src="js/jquery.min.js" type="text/javascript"></script> 
+
+<!-- custom --> 
+
+<script src="js/custom.js" type="text/javascript"></script> 
+<script src="js/nav-custom.js" type="text/javascript"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/accordianjs.js" type="text/javascript"></script>
+
+<!--JS for register button and arrowdown-->
+
+<script src="js/arrowdown.js" type="text/javascript"></script>
+
+<script src="js/registerbtn.js" type="text/javascript"></script>
+
+<!--JS for register button and arrowdown-->
+
+<!-- jquery.countdown --> 
+
+<script src="js/countdown-js.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/jquery.contact.js"></script> 
+<!-- Z-index issues-->
+
+<script src="js/zindexissues.js" type="text/javascript"></script>
+<script src="js/hoverissues.js" type="text/javascript"></script>
+<!-- slider --> 
+
+<script type="text/javascript" src="js/background.cycle.js"></script> 
+<script type="text/javascript" src="js/background.cycle-custom.js"></script> 
+<script src="js/html5shiv.js" type="text/javascript"></script> 
+
+<!-- Typed --> 
+<!-- Typed jS --> 
+
+<script src="js/typed.js" type="text/javascript"></script> 
+<script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            backDelay: 1000,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+</body>

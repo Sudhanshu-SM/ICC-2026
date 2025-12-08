@@ -1,0 +1,3588 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta charset="utf-8">
+
+<!-- Description, Keywords and Author -->
+
+<meta name="description" content="">
+<meta name="author" content="">
+<title>:: ICC ::</title>
+<link rel="shortcut icon" href="images/bclublogo_white.png" type="image/x-icon">
+
+<!-- style -->
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="head page.css">
+
+<!-- style -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<link href="css/buttonstyle.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+<!-- bootstrap -->
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/Accordian.css" rel="stylesheet">
+<!-- responsive -->
+
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- font-awesome -->
+
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Slider -->
+
+<link href="css/jquery.fadeshow-0.1.1.min.css" rel="stylesheet">
+
+<style>
+  @media(max-width:767px)
+  {#topnav
+  {
+    display:inline;
+  }
+  @media(max-width:422px)
+  {#topnav
+  {
+    text-align: center !important;
+  }
+  @media(max-width:682px)
+{
+
+	h1#bclub.headalign{
+		padding-left:-5vw !important;
+	}
+	
+}
+}}
+@media(max-width:450px)
+{
+	#modalcontainer
+	{
+		margin-left:-8% !important;
+	}
+	.other-page article p {
+		font-size: 10px;
+		line-height: 27px;
+		color: #FFF;
+		padding: 0;
+		margin: 0;
+		width: 320px;
+		padding-bottom: 27px;
+	}
+	h2#bclub
+	{
+		margin-left:-2% !important;
+	}
+}
+</style>
+<style>
+  /* *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  }    */
+  .m3{
+      width: 100%;
+      /* height: 100vh; */
+      display: flex;
+      /* flex-direction: column;
+      align-items: center; */
+      /* justify-content: center; */
+      /* background: #222; */
+      color: white;
+      flex-wrap: wrap;
+      align-content: space-between;
+      /* flex-direction: row; */
+      justify-content: space-evenly;
+      /* margin-bottom: 80%; */
+  }
+  
+  /* h2{
+      font-size: 30px;
+      margin: 15px;
+      font-weight: 600;
+      color: black;
+  } */
+  
+  .container_team{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+  }
+  
+  .container_team .card{
+      width: 260px;
+      margin: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      transition: 0.3s;
+      color: white;
+  }
+  
+  .container_team .card:hover{
+      background: rgb(30, 184, 216);
+      color: white;
+  }
+  
+  .container_team .card .content{
+      transition: 0.3s;
+      color: white;
+  }
+  
+  .container_team .card .content:hover{
+      transform: scale(1.06);
+      color: white;
+  }
+  
+  .container_team .card .profile{
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 20px auto;
+      border: 5px solid black;
+      color: white;
+  }
+  
+  .container_team .card .profile img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      color: white;
+  }
+  
+  .container_team .card .detail h2,
+  .container_team .card .detail h4{
+      margin: 10px 0;
+      color: white;
+  }
+  
+  .container_team .card .social{
+      margin: 15px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      color: white;
+  }
+  
+  .container_team .card .detail .social a{
+      margin: 8px;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      /* line-height: 40px; */
+      text-align: center;
+      transition: 0.2s;
+      color: white;
+      padding: 9px;
+  }
+  
+  .container_team .card .social a:hover{
+      background: #222;
+      color: white;
+  }
+  
+  .container_team .card .social a i{
+      font-size: 21px;
+      color: white;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+      function postToGoogle() {
+          var field1 = $("#teamname").val();
+        var field11 = $("#firstname1").val();
+        var field21 = $("#email1").val();
+        var field31 = $("#phone1").val();
+        var field41 = $("#college1").val();
+        var field51 = $("#KTJ1").val();
+        var field12 = $("#firstname2").val();
+        var field22 = $("#email2").val();
+        var field32 = $("#phone2").val();
+        var field42 = $("#college2").val();
+        var field52 = $("#KTJ2").val();
+        var field13 = $("#firstname3").val();
+        var field23 = $("#email3").val();
+        var field33 = $("#phone3").val();
+        var field43 = $("#college3").val();
+        var field53 = $("#KTJ3").val();
+        var field14 = $("#firstname4").val();
+        var field24 = $("#email4").val();
+        var field34 = $("#phone4").val();
+        var field44 = $("#college4").val();
+        var field54 = $("#KTJ4").val();
+        var field15 = $("#firstname5").val();
+        var field25 = $("#email5").val();
+        var field35 = $("#phone5").val();
+        var field45 = $("#college5").val();
+        var field55 = $("#KTJ5").val();
+        var field16 = $("#firstname6").val();
+        var field26 = $("#email6").val();
+        var field36 = $("#phone5").val();
+        var field46 = $("#college6").val();
+        var field56 = $("#KTJ6").val();
+        var field5 = $("#ques1").val();
+  
+        $.ajax({
+          url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdbzbbFBjz9-HN3hgkMWvjplz3ntH6TUpMkxdFYNMAg9uzEoA/formResponse",
+            
+          //add your google form generated numbers below which are also the 'names' of your inputs     
+          data: {
+              "entry.1029709764": field1,
+          "entry.1037030107": field11,
+          "entry.337211205": field21,
+          "entry.321072224": field31,
+          "entry.851906029": field41,
+          "entry.875310571": field51,
+          "entry.1558753111": field12,
+          "entry.516496848": field22,
+          "entry.1465245442": field32,
+          "entry.1076901440": field42,
+          "entry.1202393852": field52,
+          "entry.1434395228": field13,
+          "entry.1181001717": field23,
+          "entry.490861352": field33,
+          "entry.966671481": field43,
+          "entry.1701716227": field53,
+          "entry.236060277": field14,
+          "entry.2035381134": field24,
+          "entry.825306097": field34,
+          "entry.674242700": field44,
+          "entry.577978907": field45,
+          "entry.187475855": field15,
+          "entry.553517051": field25,
+          "entry.1720313235": field35,
+          "entry.1092825507": field45,
+          "entry.2011110740": field55,
+          "entry.1567032557": field16,
+          "entry.1082342397": field26,
+          "entry.1051092772": field36,
+          "entry.469341535": field46,
+          "entry.1256045612": field56,
+          "entry.175447457": field5,
+          },
+          type: "POST",
+          dataType: "xml",
+          success: function (d) {
+            $('#regform').trigger('reset');
+          },
+          error: function (x, y, z) {
+            $('#regform').trigger('reset');
+          }
+        });
+        return false;
+      }
+    </script>
+    <style>
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #21242d url(images/loader4.gif) no-repeat center;
+	z-index: 999;
+  background-size: cover;
+}
+    </style>
+    <script>
+      var loader;
+
+function loadNow(opacity) {
+    if (opacity <= 0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.098);
+        }, 20);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(3);
+});
+
+function hiden()
+{
+    regbtn.style.visibility="hidden";
+    regbtn.style.display="none";   
+}
+    </script>
+</head>
+
+<body>
+  <div id="loader"></div>
+  <!-- <div class="modal fade" id="ctmodal" role="dialog">
+    <div id="contactfade">  
+        <div class="modal-dialog zindexval"> -->
+        <!--  -->
+            <!-- Modal content-->
+          <!-- <div class="modal-content rounded=10 zindexval">
+            <div class="modal-header zindexval"> -->
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <!-- <h3 class="modal-title zindexval"><strong>Contact</strong></h3>
+            </div>
+            <div class="modal-body zindexval">
+              <p>
+                <h4 class="modaltext zindexval">
+
+                <br>       
+                    <strong>Email-id :</strong> <br>madihahanifa91@gmail.com
+                    <br>
+
+                <br><br><br>
+                    <strong>Phone : </strong>
+                    <br>
+                    Madiha Hanifa : +91 91223 72154 
+                    <br>
+                    Bharat Uday : +91 89079 40000
+
+                <br><br>
+
+                </h4> 
+              </p>
+              <div>
+
+              </div>            
+            </div>
+            <div class="modal-footer zindexval">
+              <div data-dismiss="modal" id="closing" class = "zindexval"><a href="#" onclick = "revert()"><strong>Close</strong></a></div>
+            </div>
+          </div>             -->
+        <!-- </div>
+    </div>
+  </div> -->
+
+  <!--MODAL-5-Content-->
+
+
+<div class="modal fade" id="myModal5" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-fullscreen timeline-fullscreen">
+        
+            <!-- Modal content -->
+          <div class="modal-content rounded=10">
+            <div class="modal-header Timeline-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title"><strong>Timeline
+                  <button type="button" class="close clbtn" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" id="closeicon">&times;</span>
+                </button></strong></h3>
+                
+            </div>
+            <div class="modal-body Timeline-body">
+<div class="container timelinecontain">
+    <div class="page-header">
+        <h1 id="timeline">History of ICC</h1>
+    </div> 
+    
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">GOLDEN YEAR</h4>
+              <p><i class="glyphicon glyphicon-time"></i> 2012</p>
+            </div>
+            <div class="timeline-body">
+              <p>2012 is considered as a milestone in the history of Business Club IIT Kharagpur, it was the year when the First ICC was held. ICC was started by the then Governing batch taking inspiration from an international case challenge, held in Germany.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">INITIAL EXPANSION INTO NEW HORIZONS</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2013-14</p>
+            </div>
+            <div class="timeline-body">
+              <p>Significant developments took place in ICC in the year 2013 and 2014. A whopping cash prize of 60k was awarded in 2014 with PFC and Unique integrated HVAC as the sponsors.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">FEATHER IN THE CAP - SPONSORS AND A WHOPPING CASH PRICE</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2015-16</p>
+            </div>
+            <div class="timeline-body">
+              <p>2015-2016 was the year where ICC took a huge leap. That year recorded a total of 1700 participants and a cash prize of 50k and Corporates like - "ITC",CIMA (Chartered Institute of Management Accountant)  sponsored the entire event in association with Kshitij.</p><br>
+                
+            </div>
+          </div>
+        </li>
+      
+        <li class="timeline-inverted">
+                    <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">COMING A LONG WAY</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2017-18</p>
+            </div>
+            <div class="timeline-body">
+              <p>Growth of ICC was exponential in the subsequent years, the quantity and quality of participants grew by many folds.In 2017 and 2018 ICC was organised in collaboration with Ecell and Kshitij  and it witnessed participation of 300 and 400 teams respectively , with a cash prize of 70k.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">RISE TO THE GLOBAL STAGE</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2020</p>
+            </div>
+            <div class="timeline-body">
+              <p>Continuing the legacy, ICC 2020 became a Global event . A total of 1800 students from all over the world participated with immense enthusiasm.Teams from University of Dhaka competed for a cash prize of 90K.</p><br>
+              
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">OVERCOMING A CHALLENGING TRIAL</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2021</p>
+            </div>
+            <div class="timeline-body">
+              <p>Year 2021, was a challenging year as ICC was conducted in an online mode with all its grandeur. Jindal Stainless sponsored the event which had a total of 3200 registrations including top notch Business Schools like NUS, Yonsei University, University of Alberta etc.</p><br>
+              
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">REACHING NEW HEIGHTS</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2022</p>
+            </div>
+            <div class="timeline-body">
+              <p>Building upon the previous year, ICC 2022 was conducted online with even more grandiosity. In association with Kshitij, the event drew participation from more than 3900 students, including 48 international teams from esteemed colleges like United International University, NSU, JU etc. The cash prize was a whopping Rs 1.5 Lakhs.
+              </p><br>
+                
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">RESURGENCE IN BRILLIANCE</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2023</p>
+            </div>
+            <div class="timeline-body">
+              <p>
+                ICC 2023, after a two-year hiatus, returned with Kshitij, hosting in-person competitions that brought together 1500+ teams and 5000+ participants. Their enthusiasm and strategic prowess made the event a success, crowned by a Rs 1.5 Lakhs cash prize, reaffirming its premier status and the revival of on-site engagements.</p><br>          
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">ELEVATING EXCELLENCE</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2024</p>
+            </div>
+            <div class="timeline-body">
+              <p>Adding to the glory, ICC 2024 achieved remarkable acclaim, drawing participants from over 650 institutions. With exhilarating in-person competitions, unmatched strategic brilliance, and unparalleled enthusiasm, the event solidified its reputation as the premier stage for innovation and collaboration. The excitement peaked with a staggering Rs 1.75L cash prize, celebrating the champions and marking another milestone in the evolution of on-site engagements.
+              </p><br>
+                
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">ASCENT TO NEW SUMMITS</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2025</p>
+            </div>
+            <div class="timeline-body">
+              <p>ICC 2025 continued the legacy of excellence with remarkable growth and participation. This edition attracted over 7200 registrations from leading institutions across India and abroad, reaffirming ICC’s stature as Asia’s largest case competition. With a reach of more than 3 lakh individuals and prizes worth Rs 1.75 lakh, the event offered participants an engaging and intellectually stimulating experience. ICC 2025 further strengthened its reputation as a premier platform for innovation, strategic thinking, and collaborative problem-solving.  
+            </div>
+          </div>
+        </li>
+        <!-- <li>
+          <div class="timeline-badge"></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">PARTNERSHIP WITH IBM</h4>
+                            <p><i class="glyphicon glyphicon-time"></i> 2018</p>
+            </div>
+            <div class="timeline-body">
+              <p>Business Club collaborated with the technology giant IBM’s black-box analytics tool SPSS to organize an awareness drive for data enthusiasts on campus. The event witnessed active participation of students from all backgrounds and eventually also served as a stepping stone of our healthy association with IBM.</p><br>
+              <h4 class="timeline-title">ART AND SCIENCE OF PROBLEM SOLVING</h4><br>
+              <p>Sales and Marketing Consulting giant, ZS Associates joined hands with Business Club to organize an interactive session for the aspiring consultants of IIT Kharagpur. The unique case-solving approaches shared during the session gathered wide appreciation and the overwhelming turnout ended up setting new benchmarks for the club.</p>
+            </div>
+          </div>
+        </li> -->
+    </ul>
+</div>
+              
+            </div>
+            <div class="modal-footer Timeline-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+  <!--MODAL-5-Content-->
+
+
+  
+  <!--MODAL-Gallery-Content-->
+
+
+
+  <div class="modal fade" id="myModalgallery" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Gallery</strong></h3>
+                <button type="button" class="close clbtn" data-dismiss="modal" aria-label="Close">
+                  <!-- <span aria-hidden="true" id="closeicon">&times;</span> -->
+            </div>
+            <div class="modal-body gallerymodal">
+              
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="14"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="15"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="16"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="17"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="18"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="19"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="20"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="21"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="22"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="23"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="24"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="25"></li>
+                  <!-- <li data-target="#carousel-example-generic" data-slide-to="26"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="27"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="28"></li> -->
+                </ol>
+              
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="images/gallery/IMG_5049.JPG" alt="">
+                    <div class="carousel-caption">
+                      <!-- Img - 1  -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5059.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 2 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5070.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 3 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5078.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 4 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5083.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 5 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5086.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 6 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5091.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 7 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5426.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 8 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5432.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 9 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5437.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 10 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5439.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 11 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5455.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 12 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5463.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 13 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5468.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 14 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5497.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 15 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5633.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 16 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5643.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 17 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5663.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 18 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5686.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 19 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5695.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 20 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5796.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 21 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5799.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 22 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5747.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 23 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5749.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 24 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5795.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 25 -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="images/gallery/IMG_5048.JPG" alt="...">
+                    <div class="carousel-caption">
+                      <!-- Img - 26 -->
+                    </div>
+                  </div>
+                  <!-- <div class="item"> -->
+                    <!-- <img src="images/gallery/Screenshot 2022-12-06 202942.jpg" alt="..."> -->
+                    <!-- <div class="carousel-caption"> -->
+                      <!-- Img - 27 -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="item"> -->
+                    <!-- <img src="images/gallery/Screenshot 2022-12-06 203127.jpg" alt="..."> -->
+                    <!-- <div class="carousel-caption"> -->
+                      <!-- Img - 28 -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                  <!-- <div class="item"> -->
+                    <!-- <img src="images/accordion_arrow.png" alt="..."> -->
+                    <!-- <div class="carousel-caption"> -->
+                      <!-- Img - 29 -->
+                    <!-- </div> -->
+                  <!-- </div> -->
+                </div>
+              
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              
+
+            </div>
+            <div class="modal-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+
+  <!--Modal-Gallery content ends-->
+
+
+
+  <!-- Modals-->
+
+  <!--Modal-1-->
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Format</strong></h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                
+                <h4 class="modaltext">
+                 
+                  
+                  The event will be conducted in two stages	
+
+                  <br><br><br>
+                  <strong>Stage 1: Prelims</strong>
+                  <br><br>
+                  <div id="rules">
+                    <ul>
+                      <li>The preliminary problem statement will be sent to the participating teams once they register on the portal.</li>
+                      <li>The dates for registrations will be declared soon. All participants must strictly abide by them.</li>
+                      <li>The result of the prelims will be communicated through email, and the final list of qualified teams will be announced through Business Club, IIT Kharagpur's social media pages, after which we shall move to Stage 2.
+                      </li>
+                      <!-- <li>The list of qualifying teams will be released through all of Business Club, IIT Kharagpur’s social media pages after which we shall move to Stage 2.</li>    -->
+                    </ul>
+                  </div>
+
+                  <br>
+                  <strong>Stage 2: Finals</strong>
+                  <br><br>
+                  <div id="rules">
+                    <ul>
+                      <li>All the shortlisted teams shall receive the final case.</li>
+                      <li>The finalists would present their solution for the final case during Kshitij (Tentatively the third week of January), 2026.</li>
+                      <li>Under no circumstances will a modification of team members be permitted, once the preliminary solution is submitted.</li>
+                      
+                    </ul>
+                  </div>
+
+                
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p1" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 8170825100
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p2" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 9831843108
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p3" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 9336719655
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p4" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 8341605275
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p5" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 9224378018
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <!-- <div class="modal fade" id="p6" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog"> -->
+        
+            <!-- Modal content-->
+          <!-- <div class="modal-content rounded=10" style="width: 43%; margin: auto;"> -->
+            <!-- <div class="modal-header" style="border-radius: 0px !important;"> -->
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <!-- <h3 class="modal-title"><strong>Phone Number</strong></h3> -->
+            <!-- </div> -->
+            <!-- <div class="modal-body" style="height: 65px !important;"> -->
+              <!-- <p> -->
+                
+                <!-- <h4 class="modaltext" style="text-align: center;"> -->
+
+                  <!-- +91 9353290780 -->
+                <!-- </h4>  -->
+              <!-- </p>                   -->
+            <!-- </div> -->
+            <!-- <div class="modal-footer" style="border-radius: 0px !important;"> -->
+              <!-- <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div> -->
+            <!-- </div> -->
+          <!-- </div>             -->
+        <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+  <div class="modal fade" id="p6" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 7838014121
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p7" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+
+                  +91 9057281306
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p8" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+                  +91 9651526430
+                
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p9" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+                  +91 8618695874
+                
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="p10" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10" style="width: 43%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Phone Number</strong></h3>
+            </div>
+            <div class="modal-body" style="height: 65px !important;">
+              <p>
+                
+                <h4 class="modaltext" style="text-align: center;">
+                  +91 8390813139
+                
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+  <div class="modal fade" id="_check" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10 submit-dialog" style="width: 90%; margin: auto;">
+            <div class="modal-header" style="border-radius: 0px !important;">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Alert!!</strong></h3>
+            </div>
+            <div id="submit" class="modal-body submit-body" style="text-align: justify;">               
+            </div>
+            <div class="modal-footer" style="border-radius: 0px !important;">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+
+  <!-- Modal2-->
+
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog modal-lg">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Rules</strong></h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                <h4 class="modaltext">
+
+                <br>       
+                
+                <div id="rules">
+                <ul>
+                  <li>Prior registration is mandatory for participation.</li><br><br>
+                  <li>Each team must have at least 3 and at most 6 members.</li><br><br>
+                  <li>Students from different colleges can be in the same team.</li><br><br>
+                  <li>Both undergraduate and postgraduate students are allowed to participate.</li><br><br>
+                  <li>Teams must mention the names of the members, their respective colleges and contact details on the first page of the report.</li><br><br>
+                  <li>Plagiarism will not be tolerated.</li><br><br>
+                  <li>All decisions made by the judges and Business Club, IIT Kharagpur will be final and binding.</li><br><br>
+                  
+                </ul>
+
+                
+                  <!-- Online registration is mandatory for participation. <br><br><br>
+                  Each team must have at least 1 and at most 5 members <br><br><br>
+                  Students from different colleges can be in the same team. <br><br><br>
+                  Both undergraduate and postgraduate students are allowed to participate. <br><br><br>
+                  Teams must mention the names of the members, their respective colleges and contact details on the first page of the report. <br><br><br>
+                  Plagiarism will not be tolerated. <br><br><br>
+                  All decisions made by the judges and Business Club, IIT Kharagpur will be final and binding. <br><br>
+                   -->
+                </div>
+
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal3-->
+
+
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div id="fadecontainer">  
+        <div class="modal-dialog">
+        
+            <!-- Modal content-->
+          <div class="modal-content rounded=10">
+            <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h3 class="modal-title"><strong>Modal Header 3</strong></h3>
+            </div>
+            <div class="modal-body">
+              <p>
+                <h4 class="modaltext">
+
+                <br>       
+                    The teams are first tested with a preliminary case over an online submission round. The shortlisted teams are invited to compete with each other on a real-world business case scenario in a gripping finale at IIT Kharagpur.
+
+                <br><br>
+                    An excellent amalgamation of business acumen, tough competition, exciting prizes topped with loads of interaction and fun activities, ICC is arguably one of the best case study competitions in India.
+                <br>
+
+                <br>       
+                    The teams are first tested with a preliminary case over an online submission round. The shortlisted teams are invited to compete with each other on a real-world business case scenario in a gripping finale at IIT Kharagpur.
+
+                <br><br>
+                    An excellent amalgamation of business acumen, tough competition, exciting prizes topped with loads of interaction and fun activities, ICC is arguably one of the best case study competitions in India.
+                <br>
+                <br>       
+                        The teams are first tested with a preliminary case over an online submission round. The shortlisted teams are invited to compete with each other on a real-world business case scenario in a gripping finale at IIT Kharagpur.
+
+                </h4> 
+              </p>                  
+            </div>
+            <div class="modal-footer">
+              <div data-dismiss="modal" id="closing"><a href="#"><strong>Close</strong></a></div>
+            </div>
+          </div>            
+        </div>
+    </div>
+  </div>
+
+
+<!-- Modal4-->
+
+<div class="modal fade" id="myModal4" role="dialog">
+  <div id="fadecontainer">  
+      <div class="modal-dialog">
+      
+          <!-- Modal content-->
+        <div class="modal-content rounded=10">
+          <div class="modal-header">
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+              <h3 class="modal-title"><strong>Modal Header 4</strong></h3>
+          </div>
+          <div class="modal-body">
+            <p>
+              <h4 class="modaltext">
+
+              <br>       
+                  The teams are first tested with a preliminary case over an online submission round. The shortlisted teams are invited to compete with each other on a real-world business case scenario in a gripping finale at IIT Kharagpur.
+
+              <br><br>
+                  An excellent amalgamation of business acumen, tough competition, exciting prizes topped with loads of interaction and fun activities, ICC is arguably one of the best case study competitions in India.
+              <br>
+
+              <br>       
+                  The teams are first tested with a preliminary case over an online submission round. The shortlisted teams are invited to compete with each other on a real-world business case scenario in a gripping finale at IIT Kharagpur.
+
+              <br><br>
+                  An excellent amalgamation of business acumen, tough competition, exciting prizes topped with loads of interaction and fun activities, ICC is arguably one of the best case study competitions in India.
+              <br>
+              <br>       
+                      The teams are first tested with a preliminary case over an online submission round. The shortlisted teams are invited to compete with each other on a real-world business case scenario in a gripping finale at IIT Kharagpur.
+
+              </h4> 
+            </p>                  
+          </div>
+          <div class="modal-footer">
+            <div data-dismiss="modal" id="closing"><a href="#" ><strong>Close</strong></a></div>
+          </div>
+        </div>            
+      </div>
+  </div>
+</div>
+
+
+<!-- Modals Over-->
+
+
+
+
+
+<!-- slider -->
+
+<div class="background"></div>
+<div class="over-bg"></div>
+
+<!-- slider -->
+
+<main role="slider-container"> 
+  
+  <!-- side bar -->
+  
+  <aside role="siderbar-nav" class="side-bar">
+    <nav>
+      <ul class="nav nav-tabs">
+        <li class="active" id="home1">
+          <a data-toggle="tab" id="ahome" href="#home" title="Home" onclick="unhide()" onmouseover="lowerz()" onmouseout="higherz()"><i class="fa fa-home"
+              aria-hidden="true"></i><span class="slidetext">Home</span></a></li>
+        <li id="men1">
+          <a data-toggle="tab" href="#menu1" id="aMenu1" title="About" onclick="unhide()" onmouseover="lowerz()" onmouseout="higherz()">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <span class="slidetext">About</span></a></li>
+        <li id="men2">
+          <a data-toggle="tab" id="aMenu2" href="#menu2" title="Register" onclick="hiden()" onmouseover="lowerz()" onmouseout="higherz()">
+            <i class="fa fa-plus-square" aria-hidden="true"></i>
+            <span class="slidetext">Register</span></a>
+</li>
+
+        <!-- <li id="men4">
+          <a data-toggle="tab" id="aMenu4" href="#menu4" title="Register" onclick="hiden()" onmouseover="lowerz()" onmouseout="higherz()"><i class="fa fa-file-text-o"
+                aria-hidden="true"></i><span class="slidetext">Submissions</span></a></li> -->
+                <!-- <li><a id="contact_btn"href="#" data-toggle="modal" data-target="#ctmodal" title="Contact"  onmouseover="lowerz()" onmouseout="higherz()"><i class="fa fa-envelope" aria-hidden="true"></i><span class="slidetext" >Contact</span></a></li> -->
+              <li id="men3">
+                <a data-toggle="tab" id="aMenu3" href="#menu3" title="team" onclick="unhide()" onmouseover="lowerz()" onmouseout="higherz()"><i class="fa fa-users" aria-hidden="true"></i><span class="slidetext" >Our Team</span></a></li>
+  
+  
+           
+                
+      </ul>
+    </nav>
+  </aside>
+  
+  <!-- side bar --> 
+  
+  <!-- header -->
+  
+  <header role="main-header" id="header">
+    <div id="topnav"> 
+      <!-- Logo -->
+      <h1 id="bclub" class="headalign">
+        <a id="blogo" href="index.html" title="Floxi">
+          <img id="whitelogo" style="height: 55px; width: 60px;" src="images/whitelogo.png" alt="BClub"/>
+        </a>&nbsp;
+        <span id="headertext">
+          <span id="businesstext"  style="font-size: 50px;">
+            <span id="Binlogo" style="font-size: 50px;">B</span>usiness
+          </span>
+          <span id="clubtext" style="font-size: 50px;">Club</span>
+        </span>
+        <!-- Register Button --> 
+<span id="reghover" class="registerbutton" 
+      style="width: 10vw; margin-right: 3vw; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+
+  <a id="areg"
+     href="#menu2"
+     onclick="document.getElementById('aMenu2').click();"
+     class="hover-grow"
+     style="display: flex; justify-content: center; align-items: center; width: 100%; padding: 12px 0; background-color: #1c4980; border-radius: 8px; text-decoration: none;">
+    <span style="color: #fff; font-size: 20px; font-weight: 700;">Register</span>
+  </a>
+
+</span>
+
+
+<style>
+  .hover-grow:hover {
+    transform: scale(1.08);
+    transition: 0.25s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    #reghover {
+      width: 200px !important;
+    }
+  }
+</style>       
+        
+        
+      </h1>
+    </div>
+  </header>
+  
+  
+  <!-- header --> 
+  
+  <!-- main -->
+  
+  <main role="main" id="main" style="padding-top: 10vh !important;">
+    <div class="container" style="margin: auto; width: 90%;"> 
+      
+      <!-- tab-content -->
+      
+      <div class="tab-content"> 
+        
+        <!-- Home -->
+        
+        <section id="home" class="tab-pane fade in active" style="padding-bottom: 200px;">
+          <article class="home-content">
+            <header role="home-title" id="typecontainer">
+              <h2 id="typehead">
+                <div id="typed-strings"><span>Indian Case Challenge, 2026</span><span>Business Club, IIT Kharagpur</span><span>Now live!</span> </div>
+                <span id="typed" style="white-space:pre;"></span></h2>
+            </header>
+            <p>The Indian Case Challenge is one of the largest case study competitions in India with a worldwide participation.
+              <br> The competition is organized by Business Club, IIT Kharagpur.<br> The 14th Edition of ICC will be held in January in association with Kshitij, the annual Techno-management fest of IIT Kharagpur.
+            </p> 
+          </article>
+          <!-- <div id="countdown"></div> -->
+
+          
+          
+
+
+
+
+        </section>
+       
+        <!-- Home --> 
+        
+        <!-- about -->
+        
+        <section id="menu1" class="tab-pane fade other-page about-pan" >
+          <header role="page-title">
+            <h2>
+              <h2 id="bclub" role="headabout" style="font-size: 6rem !important;">About ICC</h2>
+            </h2>
+          </header>
+              <article id="aboutarticle">
+                <p style="font-size: 2.2rem !important; ">The Indian Case Challenge, hosted annually by Business Club, IIT Kharagpur, is India's Largest Business Case Competition. The 14th Edition of the ICC is brought to you in association with Kshitij, IIT Kharagpur</p>
+                <p style="font-size: 2.2rem !important;">ICC 2026 will give you the opportunity to compete against the greatest business minds from across the world, along with huge cash prizes. The previous edition of ICC attracted over 7200 participants, including 48 international teams.</p>
+              </article>
+              
+          <!--MODALS-->
+
+
+          <div class="container" id="modalcontainer">
+            <div id="modalrow" class="row">
+            
+                    <!-- Modal - 1 -->
+              
+                    <!-- Button trigger modal -->
+                  
+              
+              
+                <div data-toggle="modal" data-target="#myModal1" id="wrapper"   class="col-md-5 col-xs-6">
+                    <a href="#">Format</a>
+                </div>
+
+                
+              
+              
+              
+              
+              
+              
+                <!-- Modal - 2 -->
+                
+                <div role="rules" data-toggle="modal" data-target="#myModal2" id="wrapper"   class="col-md-5 col-xs-6">
+                  <a href="#">Rules</a>
+                </div>
+            </div>
+            <!-- Modal -->
+                
+            <div id="modalrow" class="row">
+              <div role="timeline" data-toggle="modal" data-target="#myModal5" id="wrapper"   class="col-md-5 col-xs-6">
+                <a href="#">Timeline</a>
+              </div>
+
+              <!-- Modal - 3 -->
+              <!-- <div class="row">
+              <div data-toggle="modal" data-target="#myModal3" id="wrapper"   class="col-md-3 col-xs-6">
+                <a href="#">Launch-3</a>
+              </div> -->
+              
+              <!-- Modal -->
+              
+              <!-- Modal - 4 -->
+              
+              <div role="gallery" data-toggle="modal" data-target="#myModalgallery" id="wrapper"   class="col-md-5 col-xs-6">
+                <a id = "amodal4" href="#" class="col-md-2 col-xs-6">Gallery</a>
+              </div>
+              
+              <!-- Modal -->
+              
+                <!-- <div role="gallery" data-toggle="modal" data-target="#myModalgallery" id="wrapper"   class="col-md-5 col-xs-6">
+                  <a href="#">Gallery</a>
+                </div> -->
+                
+                <!-- Modal -->
+              
+              <!--Modals over-->
+              
+            </div>
+
+            <!-- <div class="indicator" id="arrowdown">
+              <a href="#amodal4" onclick="arrowclick()"><span></span>
+              <span></span>
+              <span></span></a id = "amodal4">
+            </div> -->
+            <!-- <svg class="arrows">id = "amodal4"
+							<path class="a1" d="M0 0 L30 32 L60 0"></path>
+							<path class="a2" d="M0 20 L30 52 L60 20"></path>
+							<path class="a3" d="M0 40 L30 72 L60 40"></path>
+						</svg> -->
+
+
+
+
+        </section>
+        
+        <!--REG FORM 1-->       
+          <section id="menu2" class="tab-pane fade other-page">
+          <header id="regpagehead" role="page-title">
+             <h2 id="bclub" role="headregister" >Registrations are open</h2>
+          </header>
+          <article class="home-content regtext"><p id="registertext" >Required field are marked with an asterisk (*)<br>  
+          
+        </article> 
+         
+          
+          
+
+
+
+            <!--REG FORM-->
+            <iframe name="hidden_iframe" style="display: none;"></iframe>
+
+
+            <iframe name="hidden_iframe" style="display: none;"></iframe> 
+
+            <form class="row g-3" id="regform" name="rform" onsubmit="return postToGoogle();" target="hidden_iframe">
+
+              <div class="row">
+
+              
+                <div class="col-md-12">
+                  <label for="teamname" class="form-label" id="reglabelhead"><sup>*</sup>Team Name</label>
+                  <input type="text" class="form-control1 inputfields" id="teamname"  name="entry.1029709764" placeholder="Enter Your Team Name" required>
+                </div>
+  
+              
+                <!-- <input type="text" class="quantumWizTextinputSimpleinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Short-answer text" disabled="" dir="auto" data-initial-dir="auto" data-initial-value=""> -->
+  
+              </div>
+            
+            
+             <br><br><br>
+
+             <span id="formheading"><sup>*</sup> Team Leader: Member-1</span>
+             <br><br>
+              <div class="row" >
+
+                <div class="col-md-6">
+                  <label for="firstname" class="form-label" id="reglabel"><sup>*</sup>Name</label>
+                  <input type="text" class="form-control1  inputfields" id="firstname1" name="entry.1037030107" placeholder="Enter Your Name" required>
+              </div>
+            
+
+              <div class="col-md-6">
+                  <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
+                  <input type="text" class="form-control1  inputfields" id="email1" name="entry.337211205 " placeholder="abc@xyz.com" required>
+              </div>
+
+              </div>
+
+              <div class="row">
+
+                <br>
+
+              <div class="col-md-6">
+                  <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
+                  <input type="number" class="form-control1  inputfields" id="phone1" name="entry.321072224 " placeholder="+91" required>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
+                  <input type="text" class="form-control1  inputfields" id="college1" name="entry.851906029" placeholder="College Name" required>
+              </div>
+              <div class="row">
+
+                <br>
+
+              <div class="col-md-6" style="margin: 15px;">
+                  <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID(If you have been redirected here from Kshitij Techno-Fest website)</label>
+                  <input type="text" class="form-control1  inputfields" id="KTJ1" name="entry.875310571 " placeholder="Enter your KTJ ID">
+              </div>
+              </div>
+              
+              </div>
+              <br><br><br>
+
+
+
+              
+                
+                  
+                <span id="formheading"><sup>*</sup> Member-2</span>
+                 
+                <br><br>
+                
+                    <div class="row">
+
+                      <div class="col-md-6">
+                        <label for="firstname" class="form-label"  id="reglabel"><sup>*</sup>Name</label>
+                        <input type="text" class="form-control1  inputfields" id="firstname2" name="entry.1558753111" placeholder="Enter Your Name" required>
+                    </div>
+                  
+      
+                    <div class="col-md-6">
+                        <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
+                        <input type="text" class="form-control1  inputfields" id="email2" name="entry.516496848" placeholder="abc@xyz.com" required>
+                    </div>
+      
+                    </div>
+      
+                    <div class="row">
+      
+                      <br>
+      
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
+                        <input type="number" class="form-control1  inputfields" id="phone2" name="entry.1465245442" placeholder="+91" required>
+                    </div>
+      
+                    <div class="col-md-6">
+                        <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
+                        <input type="text" class="form-control1  inputfields" id="college2" name="entry.1076901440" placeholder="College Name" required>
+                    </div>
+                    
+                  </div>
+                  <div class="row">
+
+                    <br>
+    
+                  <div class="col-md-6">
+                      <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID</label>
+                      <input type="text" class="form-control1  inputfields" id="KTJ2" name="entry.1202393852 " placeholder="Enter your KTJ ID">
+                  </div>
+                  </div>
+                    <br><br><br>
+
+                    <span id="formheading"><sup>*</sup> Member-3</span>
+                 
+                    <br><br>
+                    
+                        <div class="row">
+    
+                          <div class="col-md-6">
+                            <label for="firstname" class="form-label"  id="reglabel"><sup>*</sup>Name</label>
+                            <input type="text" class="form-control1" id="firstname3" name="entry.1434395228" placeholder="Enter Your Name" required>
+                        </div>
+                      
+          
+                        <div class="col-md-6">
+                            <label for="email" class="form-label"  id="reglabel"><sup>*</sup>Email id:</label>
+                            <input type="text" class="form-control1" id="email3" name="entry.1181001717" placeholder="abc@xyz.com" required>
+                        </div>
+          
+                        </div>
+          
+                        <div class="row">
+          
+                          <br>
+          
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label"  id="reglabel"><sup>*</sup>Phone Number</label>
+                            <input type="number" class="form-control1" id="phone3" name="entry.490861352" placeholder="+91" required>
+                        </div>
+          
+                        <div class="col-md-6">
+                            <label for="college" class="form-label"  id="reglabel"><sup>*</sup>College</label>
+                            <input type="text" class="form-control1" id="college3" name="entry.966671481" placeholder="College Name" required>
+                        </div>
+                        
+                        </div>
+                        <div class="row">
+
+                          <br>
+          
+                        <div class="col-md-6" >
+                            <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID</label>
+                            <input type="text" class="form-control1  inputfields" id="KTJ3" name="entry.1701716227 " placeholder="Enter your KTJ ID">
+                        </div>
+                        </div>
+                  
+              
+
+
+
+              <br><br>
+
+
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span id="formheading">Member-4</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="row">
+
+                        <div class="col-md-6">
+                          <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                          <input type="text" class="form-control1" id="firstname4" name="entry.236060277" placeholder="Enter Your Name">
+                      </div>
+                    
+        
+                      <div class="col-md-6">
+                          <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                          <input type="text" class="form-control1" id="email4" name="entry.2035381134" placeholder="abc@xyz.com">
+                      </div>
+        
+                      </div>
+        
+                      <div class="row">
+        
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                          <input type="number" class="form-control1" id="phone4" name="entry.825306097" placeholder="+91">
+                      </div>
+        
+                      <div class="col-md-6">
+                          <label for="college" class="form-label"  id="reglabel">College</label>
+                          <input type="text" class="form-control1" id="college4" name="entry.674242700" placeholder="College Name">
+                      </div>
+                      
+                      </div>
+                      <div class="row">
+
+                        <br>
+        
+                      <div class="col-md-6" >
+                          <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID</label>
+                          <input type="text" class="form-control1  inputfields" id="KTJ4" name="entry.577978907 " placeholder="Enter your KTJ ID">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      <span id="formheading">Member-5</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="row">
+
+                        <div class="col-md-6">
+                          <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                          <input type="text" class="form-control1" id="firstname5" name="entry.187475855" placeholder="Enter Your Name">
+                      </div>
+                    
+        
+                      <div class="col-md-6">
+                          <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                          <input type="text" class="form-control1" id="email5" name="entry.553517051" placeholder="abc@xyz.com">
+                      </div>
+        
+                      </div>
+        
+                      <div class="row">
+        
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                          <input type="number" class="form-control1" id="phone5" name="entry.1720313235" placeholder="+91">
+                      </div>
+        
+                      <div class="col-md-6">
+                          <label for="college" class="form-label"  id="reglabel">College</label>
+                          <input type="text" class="form-control1" id="college5" name="entry.1092825507" placeholder="College Name">
+                      </div>
+                      
+                      </div>
+                      <div class="row">
+
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID</label>
+                          <input type="text" class="form-control1  inputfields" id="KTJ5" name="entry.2011110740 " placeholder="Enter your KTJ ID">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <span id="formheading">Member-6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="row">
+
+                        <div class="col-md-6">
+                          <label for="firstname" class="form-label"  id="reglabel">Name</label>
+                          <input type="text" class="form-control1" id="firstname6" name="entry.1567032557" placeholder="Enter Your Name">
+                      </div>
+                    
+        
+                      <div class="col-md-6">
+                          <label for="email" class="form-label"  id="reglabel">Email id:</label>
+                          <input type="text" class="form-control1" id="email6" name="entry.1082342397" placeholder="abc@xyz.com">
+                      </div>
+        
+                      </div>
+        
+                      <div class="row">
+        
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="phone" class="form-label"  id="reglabel">Phone Number</label>
+                          <input type="number" class="form-control1" id="phone6" name="entry.1051092772" placeholder="+91">
+                      </div>
+        
+                      <div class="col-md-6">
+                          <label for="college" class="form-label"  id="reglabel">College</label>
+                          <input type="text" class="form-control1" id="college6" name="entry.469341535" placeholder="College Name">
+                      </div>
+                      
+                      </div>
+                      <div class="row">
+
+                        <br>
+        
+                      <div class="col-md-6">
+                          <label for="Ktj id" class="form-label"  id="reglabel">KTJ ID</label>
+                          <input type="text" class="form-control1  inputfields" id="KTJ6" name="entry.1256045612 " placeholder="Enter your KTJ ID">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br><br><br>
+
+
+              <div class="row">
+
+              
+                <div class="col-md-12">
+                    <label for="ques1" class="form-label" id="formheading"><sup>*</sup>How did you hear about us ?</label>
+                    <!-- <input type="text" class="form-control1 inputfields" id="ques1"  name="entry.1317580365" placeholder="..." required> -->
+                 
+                  
+                    <br>
+
+                  
+                  
+                    <select id="ques1" name="entry.175447457" class="form-select" required>
+                    <option value="College">College</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="D2C">D2C</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Other">Other</option>
+                    </select> 
+                   
+
+                <!-- </div> -->
+                
+  
+              
+                <!-- <input type="text" class="quantumWizTextinputSimpleinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Short-answer text" disabled="" dir="auto" data-initial-dir="auto" data-initial-value=""> -->
+  
+                <!-- </div>  -->
+
+
+              
+
+              <!-- 1317580365 -->
+
+              <br><br><br><br>
+              <div data-toggle="modal" data-target="#_check" style="margin-top: 18px;">
+                <button class="btn btn-primary" id="wrappernew" onclick="checkForm()">Submit</button>
+              </div>
+                  <!-- <button class="btn btn-primary" id="wrappernew" onclick="checkForm()">Submit</button> -->
+              <!-- <div class="col-2">
+                  <button class="btn btn-primary" id="wrappernew" onclick="checkForm()">Submit</button>
+                </div>  -->
+                <!-- <p id="wrappernew" style="border: none;"></p>                 -->
+
+                <script src="js/regformsubmit.js">
+                  
+                    // function submitForm() {
+                    // document.regform.submit();
+                    // document.regform.reset();
+
+                    // var mysubmit = document.getElementById('submit');
+                    // // var displaySetting = submit.style.display;
+                    // // mysubmit.style.display = 'block';
+
+                    // }
+
+                  
+
+                    
+
+
+                </script>
+
+
+
+              
+
+
+              <div class="indicator" id="arrowdown2">
+              <a href="#wrappernew" onclick="arrowclick()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
+              </div>
+              <br><br><br><br>
+              
+          </form>
+          
+          <!--REG FORM-->
+
+          <br><br><br><br>
+          <br><br><br><br>
+          <span id="paddingnew">abc</span>
+          <br><br><br><br>
+          <br>
+          <span id="paddingnew">abc</span>
+
+
+
+            
+          </article>
+        </section>
+        <!-- Newsletter Subscribtion --> 
+        
+        <!-- Contact -->
+        <section id="menu3" class="tab-pane fade other-page">
+          <!-- <header role="page-title" style="padding-bottom:20px;">
+              <h2 id="bclub" role="headabout">Our Team</h2>
+            </header>-->
+            <div class="m3">
+              <h2 style="color: #1eb8d8; font-size: 40px; margin-right: 55px;"><strong>Executive Team</strong></h2>
+      <div class="container_team" style="margin-right: 55px;">
+        <div class="card">
+          <div class="content">
+              <div class="profile">
+                  <img src="images/Head photo/Arnavbansal.jpeg" alt="">
+              </div>
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Arnav Bansal</h2>
+                  <h4 style="font-size: 15px ;">Governor</h4>
+                  <div class="social">
+                      <a href="mailto:arnavbansal.governor@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                      <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                      <!-- <div data-toggle="modal" data-target="#p1" style="margin-top: 18px;">
+                <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+                padding-left: 8px;"><i class="fa fa-phone"></i></a>
+              </div> -->
+                      <a href="https://www.linkedin.com/in/arnav-bansal-47322528b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="card">
+          <div class="content">
+              <div class="profile">
+                  <img src="images/Head photo/Hitarth.jpeg" alt="">
+              </div>
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Hitarth Vora</h2>
+                  <h4 style="font-size: 15px ;">Governor</h4>
+                  <div class="social">
+                      <a href="mailto:hitarth.governor@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                      <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                      <!-- <div data-toggle="modal" data-target="#p2" style="margin-top: 18px;">
+                <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+                padding-left: 8px;"><i class="fa fa-phone"></i></a>
+              </div> -->
+                      <a href="https://www.linkedin.com/in/hitarth--vora/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+        <div class="content">
+            <div class="profile">
+                <img src="images/Head photo/Siddhant.jpeg" alt="">
+            </div>
+            <div class="detail">
+                <h2 style=" font-size: 25px">Siddhant Yadav</h2>
+                <h4 style="font-size: 15px ;">Head Analytics</h4>
+                <div class="social">
+                    <a href="mailto:siddhant.analyticshead@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                    <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                    <!-- <div data-toggle="modal" data-target="#p3" style="margin-top: 18px;">
+                <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+                padding-left: 8px;"><i class="fa fa-phone"></i></a>
+              </div> -->
+                    <a href="https://www.linkedin.com/in/siddhant-yadav-67364a27b/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="content">
+            <div class="profile">
+                <img src="images/Head photo/Soham.jpeg" alt="">
+            </div>
+            <div class="detail">
+                <h2 style=" font-size: 25px">Soham Kejriwal</h2>
+                <h4 style="font-size: 15px ;">Head Analytics</h4>
+                <div class="social">
+                    <a href="mailto:soham.analyticshead@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                    <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                    <!-- <div data-toggle="modal" data-target="#p3" style="margin-top: 18px;">
+                <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+                padding-left: 8px;"><i class="fa fa-phone"></i></a>
+              </div> -->
+                    <a href="https://www.linkedin.com/in/sohamkejriwal/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Head photo/Aditya.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Aditya Biswas</h2>
+            <h4 style="font-size: 15px ;">Head Finance</h4>
+            <div class="social">
+                <a href="mailto:adityabiswas@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p6" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/aditya-biswas-iit-kgp/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Head photo/Rashi.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Rashi Suryawanshi</h2>
+            <h4 style="font-size: 15px ;">Head Finance</h4>
+            <div class="social">
+                <a href="mailto:Rashi02.iitkgp@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p7" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/rashi-suryawanshi-04a94a287/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card ">
+      <div class="content">
+          <div class="profile">
+              <img src="images/Head photo/Harshit.jpeg" alt="">
+          </div>
+          <div class="detail">
+              <h2 style=" font-size: 25px">Harshit Singh</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+              <div class="social">
+                  <a href="mailto:harshitsingh@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                  <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                  <!-- <div data-toggle="modal" data-target="#p8" style="margin-top: 18px;">
+            <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+            padding-left: 8px;"><i class="fa fa-phone"></i></a>
+          </div> -->
+                  <a href="https://www.linkedin.com/in/harshit-singh-387962288/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Head photo/Jayveer.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Jayveer Dodiya</h2>
+            <h4 style="font-size: 15px ;">Head Strategy</h4>
+            <div class="social">
+                <a href="mailto:jayveer.strategyhead@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p9" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/jayveersinh-dodiya-663611212/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Head photo/Sudhanshu.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Sudhanshu Mishra</h2>
+            <h4 style="font-size: 15px ;">Technical Head</h4>
+            <div class="social">
+                <a href="mailto:sudhanshu.technical_head@bclub.co.in"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p9" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/sudhanshu-mishra-6a70a3287/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+    <!-- <div>
+      <div class="indicator" id="arrowdown3">
+        <a href="#wrappernew2" onclick="arrowclick()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        </div>
+        <br><br><br><br>
+    </div>
+    </div>
+       -->
+      <!-- </div> -->
+      
+      <div class="m3" style="width: 80%;">
+        
+        <h2 style="color: #1eb8d8; font-size: 40px;"><strong>Our Advisors</strong></h2>
+        <div class="container_team">
+  <div class="card ">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/arya_vs.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Arya Vardhan Singh</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:arya13122003@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p8" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/arya-vardhan-singh-530b54223/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/jash.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Jash Mody</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:jashmody11@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p10" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/jashmody/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/lokesh.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style="font-size: 25px;">Lokesh Tirthani</h2>
+            <h4 style="font-size: 15px;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:lokeshtirthani@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p5" style="margin-top: 18px;">
+            <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+            padding-left: 8px;"><i class="fa fa-phone"></i></a>
+          </div> -->
+                <a href="https://www.linkedin.com/in/lokesh-tirthani-916602231/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/ojasvi.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Ojasvi R Singh</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:ojasvirsingh2003@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p6" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/ojasvi-r-singh/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/shreeya.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Shreeya Mishra</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:shreeyamishra22@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p2" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/shreeya-mishra-204071256/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/siddhart.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Siddharth Dikshit</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:siddharthdikshit2207@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p1" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/siddharth-dikshit-351585227/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/suryaansh2.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Suryaansh Jindal</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:jindalsuryaansh@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p7" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/suryaansh-jindal-b10934210/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>  
+  <div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/Advisor photo/arnavb.png" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style=" font-size: 25px">Arnav Bansal</h2>
+                    <h4 style="font-size: 15px ;">Advisor</h4>
+                    <div class="social">
+                        <a href="mailto:arnavb2112@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                        <!-- <div data-toggle="modal" data-target="#p1"> -->
+                          <!-- <a href="#"><i class="fa fa-phone"></i></a> -->
+                        <!-- </div> -->
+                        <!-- <a><i class="fa fa-phone"></i></a> -->
+                        <a href="https://www.linkedin.com/in/arnavb2112/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+    <div class="card">
+        <div class="content">
+            <div class="profile">
+                <img src="images/Advisor photo/anshul.jpeg" alt="">
+            </div>
+            <div class="detail">
+                <h2 style=" font-size: 25px">Anshul Trehan</h2>
+                <h4 style="font-size: 15px ;">Advisor</h4>
+                <div class="social">
+                    <a href="mailto:anshultrehan28@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                    <!-- <div data-toggle="modal" data-target="#p1"> -->
+                      <!-- <a href="#"><i class="fa fa-phone"></i></a> -->
+                    <!-- </div> -->
+                    <!-- <a><i class="fa fa-phone"></i></a> -->
+                    <a href="https://www.linkedin.com/in/anshul-trehan-36522a205/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>      
+    <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/aryad.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Arya Dighde</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto: aryadighde140903@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p3" style="margin-top: 18px;">
+            <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+            padding-left: 8px;"><i class="fa fa-phone"></i></a>
+          </div> -->
+                <a href="https://www.linkedin.com/in/arya-dighde-9199b4262/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/aman.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Aman Samriya</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:amansambclub22@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p9" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/aman-samriya-7726a1259/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/manya.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Manya Singh Chopra</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:manyaschopra@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p4" style="margin-top: 18px;">
+            <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+            padding-left: 8px;"><i class="fa fa-phone"></i></a>
+          </div> -->
+                <a href="https://www.linkedin.com/in/manya-s-chopra-8b3b3224a/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/adrika.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Adrika Agarwal</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:Adrika.agarwal4@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p3" style="margin-top: 18px;">
+            <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+            padding-left: 8px;"><i class="fa fa-phone"></i></a>
+          </div> -->
+                <a href="https://www.linkedin.com/in/adrika-agarwal-222148256/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/aarushi.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Aarushi Mahajan</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:aarushikm132@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p9" style="margin-top: 18px;">
+          <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+          padding-left: 8px;"><i class="fa fa-phone"></i></a>
+        </div> -->
+                <a href="https://www.linkedin.com/in/aarushi-mahajan-1687a6269/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+        <div class="profile">
+            <img src="images/Advisor photo/abhiram.jpeg" alt="">
+        </div>
+        <div class="detail">
+            <h2 style=" font-size: 25px">Abhiram Siddanthi</h2>
+            <h4 style="font-size: 15px ;">Advisor</h4>
+            <div class="social">
+                <a href="mailto:abhiramsiddanthi@gmail.com"><i class="fa fa-envelope"></i></a>
+                <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                <!-- <div data-toggle="modal" data-target="#p4" style="margin-top: 18px;">
+            <a href="#" style="padding-top: 13px; padding-bottom: 4px;
+            padding-left: 8px;"><i class="fa fa-phone"></i></a>
+          </div> -->
+                <a href="https://www.linkedin.com/in/abhiram-siddanthi-6b4313298/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!-- <div id="p1" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <p>Some text in the Modal..</p>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+</div> -->
+<div>
+<!-- <div class="indicator" id="arrowdown3">
+  <a href="#wrappernew2" onclick="arrowclick()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  </div>
+  <br><br><br><br>
+</div> -->
+</div>
+
+</div>
+</div>
+<div  style="width: 80%;">
+  <br>
+  <h2 style="color: #1eb8d8; font-size: 40px;"><strong>Our Alumni</strong></h2>
+  <br>
+  <h2 style="color: white; font-size: 35px;"><strong>Heads 2023-24</strong></h2>
+  <div class="container_team">
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Siddharth Dikshit</h2>
+              <h4 style="font-size: 15px ;">Governor</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Shreeya Mishra</h2>
+              <h4 style="font-size: 15px ;">Governor</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Ishaan Ray</h2>
+              <h4 style="font-size: 15px ;">Head Analytics</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Lokesh Tirthani</h2>
+              <h4 style="font-size: 15px ;">Head Analytics</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Adyan Rizvi</h2>
+              <h4 style="font-size: 15px ;">Head Analytics</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Ojasvi R Singh</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Suryaansh Jindal</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Arya Vardhan Singh</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Atmajyoti Ghosh</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Jash Mody</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+<div  style="width: 80%;">
+  <br>
+  <h2 style="color: #1eb8d8; font-size: 40px;"><strong>Our Alumni</strong></h2>
+  <br>
+  <h2 style="color: white; font-size: 35px;"><strong>Heads 2022-23</strong></h2>
+  <div class="container_team">
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Bharat Uday</h2>
+              <h4 style="font-size: 15px ;">Governor</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Madiha Hanifa</h2>
+              <h4 style="font-size: 15px ;">Governor</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Vaibhav Jalani</h2>
+              <h4 style="font-size: 15px ;">Head Analytics</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Siddharth Madupathi</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Pragya Choudhary</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Ram Sundaram</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Yuti Patel</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Sai Kalyan Meghavath</h2>
+              <h4 style="font-size: 15px ;">Head Web</h4>
+          </div>
+      </div>
+    </div>
+
+</div>
+</div>
+<div  style="width: 80%;">
+
+  <h2 style="color: white; font-size: 35px;"><strong>Heads 2021-22</strong></h2>
+  <div class="container_team">
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Arya Uttamchandani</h2>
+              <h4 style="font-size: 15px ;">Governor</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Sankalp Bose</h2>
+              <h4 style="font-size: 15px ;">Governor</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Karan Uppal</h2>
+              <h4 style="font-size: 15px ;">Head Analytics</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Dikshant Pratap Singh</h2>
+              <h4 style="font-size: 15px ;">Head Analytics</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Arnav Bhutda</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Suhas Jain</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Aditya Saha</h2>
+              <h4 style="font-size: 15px ;">Head Finance</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Tejaswi Pagadala</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Kashish Lundia</h2>
+              <h4 style="font-size: 15px ;">Head Strategy</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Piyush Dhamane</h2>
+              <h4 style="font-size: 15px ;">Head Web</h4>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+          <div class="detail">
+              <h2 style=" font-size: 25px">Deepansh Agarwal</h2>
+              <h4 style="font-size: 15px ;">Head Branding and PR</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div  style="width: 80%;">
+
+      <h2 style="color: white; font-size: 35px;"><strong>Heads 2020-21</strong></h2>
+      <div class="container_team">
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Aryan Saxena</h2>
+                  <h4 style="font-size: 15px ;">Governor</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Lakshraj Doshi</h2>
+                  <h4 style="font-size: 15px ;">Governor</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Shashank Singh</h2>
+                  <h4 style="font-size: 15px ;">Governor</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Arusarka Bose</h2>
+                  <h4 style="font-size: 15px ;">Head Analytics</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Naman Paharia</h2>
+                  <h4 style="font-size: 15px ;">Head Analytics</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Abhinav Bohra</h2>
+                  <h4 style="font-size: 15px ;">Head Analytics</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Sayantan Das</h2>
+                  <h4 style="font-size: 15px ;">Head Finance</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Lakshiyata Chhajer</h2>
+                  <h4 style="font-size: 15px ;">Head Finance</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Amur Khandelwal</h2>
+                  <h4 style="font-size: 15px ;">Head Finance</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Shivam</h2>
+                  <h4 style="font-size: 15px ;">Head Strategy</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Gaurav Joshi</h2>
+                  <h4 style="font-size: 15px ;">Head Strategy</h4>
+              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+              <div class="detail">
+                  <h2 style=" font-size: 25px">Inakshi Kar</h2>
+                  <h4 style="font-size: 15px ;">Head Strategy</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div  style="width: 80%;">
+
+          <h2 style="color: white; font-size: 35px;"><strong>Heads 2019-20</strong></h2>
+          <div class="container_team">
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Aditya Parashar</h2>
+                      <h4 style="font-size: 15px ;">Governor</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Deepankar Sachdeva</h2>
+                      <h4 style="font-size: 15px ;">Governor</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Chinmay Singh</h2>
+                      <h4 style="font-size: 15px ;">Head Analytics</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Amrit Goswami</h2>
+                      <h4 style="font-size: 15px ;">Head Analytics</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Karan Mahajan</h2>
+                      <h4 style="font-size: 15px ;">Head Analytics</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Shreyansh Jain</h2>
+                      <h4 style="font-size: 15px ;">Head Finance</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Vikrant Gupta</h2>
+                      <h4 style="font-size: 15px ;">Head Finance</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Tushar Mohandas</h2>
+                      <h4 style="font-size: 15px ;">Head Strategy</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Tushar Singla</h2>
+                      <h4 style="font-size: 15px ;">Head Strategy</h4>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                  <div class="detail">
+                      <h2 style=" font-size: 25px">Aditya Singhania</h2>
+                      <h4 style="font-size: 15px ;">Head Technical</h4>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div  style="width: 80%;">
+
+              <h2 style="color: white; font-size: 35px;"><strong>Heads 2018-19</strong></h2>
+              <div class="container_team">
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Aman Sharma</h2>
+                          <h4 style="font-size: 15px ;">Governor</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Nikita Kisore</h2>
+                          <h4 style="font-size: 15px ;">Governor</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Yash Jain</h2>
+                          <h4 style="font-size: 15px ;">Head Analytics</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Amandeep Singh</h2>
+                          <h4 style="font-size: 15px ;">Head Finance</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Puneet Pansari</h2>
+                          <h4 style="font-size: 15px ;">Head Finance</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Amit Gunjan</h2>
+                          <h4 style="font-size: 15px ;">Head Strategy</h4>
+                      </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                      <div class="detail">
+                          <h2 style=" font-size: 25px">Yogshree Choukse</h2>
+                          <h4 style="font-size: 15px ;">Head Strategy</h4>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div  style="width: 80%;">
+
+              <h2 style="color: white; font-size: 35px;"><strong>Heads 2017-18</strong></h2>
+                <div class="container_team">
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Harsh Agarwal</h2>
+                              <h4 style="font-size: 15px ;">Governor</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Hitendra Pratap</h2>
+                              <h4 style="font-size: 15px ;">Governor</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Shubhra Agarwal</h2>
+                              <h4 style="font-size: 15px ;">Governor</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Ankit Agarwal</h2>
+                              <h4 style="font-size: 15px ;">Head Analytics</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Subham Rajgaria</h2>
+                              <h4 style="font-size: 15px ;">Head Analytics</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Rajat Ragha</h2>
+                              <h4 style="font-size: 15px ;">Head Finance</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Shubham Sharma</h2>
+                              <h4 style="font-size: 15px ;">Head Finance</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Shubham Maheshwari</h2>
+                              <h4 style="font-size: 15px ;">Head Strategy</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Rahul Raj</h2>
+                              <h4 style="font-size: 15px ;">Head Blogs and Articles</h4>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="content">
+                          <div class="detail">
+                              <h2 style=" font-size: 25px">Anjali Bharti</h2>
+                              <h4 style="font-size: 15px ;">Head Design</h4>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                    <div  style="width: 80%;">
+
+                      <h2 style="color: white; font-size: 35px;"><strong>Heads 2016-17</strong></h2>
+                      <div class="container_team">
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Priya Mehta</h2>
+                                  <h4 style="font-size: 15px ;">Governor</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Kumar Sparsh</h2>
+                                  <h4 style="font-size: 15px ;">Governor</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Udit Sarin</h2>
+                                  <h4 style="font-size: 15px ;">Governor</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Charu Agarwal</h2>
+                                  <h4 style="font-size: 15px ;">Head Analytics</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Shwetha Krishnamurthy</h2>
+                                  <h4 style="font-size: 15px ;">Head Analytics</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Debjyoti Chakrabarti</h2>
+                                  <h4 style="font-size: 15px ;">Head Finance</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Medha Asija</h2>
+                                  <h4 style="font-size: 15px ;">Head Consultancy</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Shubham Singhal</h2>
+                                  <h4 style="font-size: 15px ;">Head Technical</h4>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="content">
+                              <div class="detail">
+                                  <h2 style=" font-size: 25px">Vaibhav Chauhan</h2>
+                                  <h4 style="font-size: 15px ;">Head Technical</h4>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        <div  style="width: 80%;">
+
+                          <h2 style="color: white; font-size: 35px;"><strong>Heads 2015-16</strong></h2>
+                          <div class="container_team">
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Ashutosh Dwivedi</h2>
+                                      <h4 style="font-size: 15px ;">Governor</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Nishant Jayaswal</h2>
+                                      <h4 style="font-size: 15px ;">Governor</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Shiladitya Saha</h2>
+                                      <h4 style="font-size: 15px ;">Governor</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Raunak Chitlangia</h2>
+                                      <h4 style="font-size: 15px ;">Head Analytics</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Shubhrit Agarwal</h2>
+                                      <h4 style="font-size: 15px ;">Head Analytics</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Manik Aggarwal</h2>
+                                      <h4 style="font-size: 15px ;">Head Consultancy</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Dhruva Ratanpura</h2>
+                                      <h4 style="font-size: 15px ;">Head Finance</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Murtaza Phalasiya</h2>
+                                      <h4 style="font-size: 15px ;">Head Technical</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Rajat Bhavnani</h2>
+                                      <h4 style="font-size: 15px ;">Head Technical</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Rihen Chheda</h2>
+                                      <h4 style="font-size: 15px ;">Head Logistics</h4>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="content">
+                                  <div class="detail">
+                                      <h2 style=" font-size: 25px">Ritwik Bajaj</h2>
+                                      <h4 style="font-size: 15px ;">Head Logistics</h4>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                            <div  style="width: 80%;">
+
+                              <h2 style="color: white; font-size: 35px;"><strong>Heads 2014-15</strong></h2>
+                              <div class="container_team">
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Sarthak Badjatiya</h2>
+                                          <h4 style="font-size: 15px ;">Governor</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Shramajit Gupta</h2>
+                                          <h4 style="font-size: 15px ;">Governor</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Virendra Singh</h2>
+                                          <h4 style="font-size: 15px ;">Governor</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Pranay Yadav</h2>
+                                          <h4 style="font-size: 15px ;">Head Analytics</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Pratyush Devliyal</h2>
+                                          <h4 style="font-size: 15px ;">Head Consultancy</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Umang Mavani</h2>
+                                          <h4 style="font-size: 15px ;">Head Finance</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Ravikiran Shinde</h2>
+                                          <h4 style="font-size: 15px ;">Head Technical</h4>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div  style="width: 80%;">
+
+                              <h2 style="color: #1eb8d8; font-size: 40px;"><strong>Our Founders</strong></h2>
+                              <div class="container_team">
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Shailesh Gupta</h2>
+                                          
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Sudipto Sannigrahi</h2>
+                                          
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Srichandana Sanjeev</h2>
+                                          
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Harsh Gupta</h2>
+                                          
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                      <div class="detail">
+                                          <h2 style=" font-size: 25px">Mayank Mundra</h2>
+                                          
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                              
+                              
+                              
+</div>
+</div>
+  <div style="margin-bottom: 250px; ">
+    &nbsp;&nbsp;
+  </div>
+  <!-- <div class="indicator" id="arrowdown3">
+    <a href="#wrappernew2" onclick="arrowclick()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    </div>
+    <br><br><br><br> -->
+  <!-- <p id="wrappernew2" style="margin-bottom: 200px;"></p> -->
+    <!-- <div class="indicator" id="arrowdown2">
+      <a href="#wrappernew2" onclick="arrowclick()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      </div>
+      <br><br><br><br> -->
+      <!-- <p id="wrappernew2"></p> -->
+          
+          <!-- form --> 
+          
+  </section>
+        
+        <!-- Contact --> 
+        
+      </div>
+      
+      <!-- tab-content --> 
+      
+    </div>
+
+
+    
+
+<!-- Modals -->
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+  
+  <!-- main --> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <!-- footer -->
+  
+  <footer role="footer" id="footz">
+
+
+
+
+
+
+
+    <div id="footcontainer">
+      <p><a href="https://bclub.co.in/">Business Club, IIT Kharagpur</a></p>
+      <div id="socialcontainer">
+      <ul role="socil-icons" id="socialicons">
+        <li><a href="https://www.instagram.com/bclub.iitkgp/" target="_blank" title="Instagram"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/bclubkgp" target="_blank" title="Facebook"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/bclubiitkgp/" target="_blank" title="Linkedin"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+      </ul>
+      </div>
+      </div>
+  </footer>
+</main>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+
+<script src="js/jquery.min.js" type="text/javascript"></script> 
+
+<!-- custom --> 
+
+<script src="js/custom.js" type="text/javascript"></script> 
+<script src="js/nav-custom.js" type="text/javascript"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+
+
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/accordianjs.js" type="text/javascript"></script>
+
+<!--JS for register button and arrowdown-->
+
+<script src="js/arrowdown.js" type="text/javascript"></script>
+
+<script src="js/registerbtn.js" type="text/javascript"></script>
+
+<!--JS for register button and arrowdown-->
+
+<!-- jquery.countdown --> 
+
+<script src="js/countdown-js.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/jquery.contact.js"></script> 
+<!-- Z-index issues-->
+
+<script src="js/zindexissues.js" type="text/javascript"></script>
+<script src="js/hoverissues.js" type="text/javascript"></script>
+<!-- slider --> 
+
+<script type="text/javascript" src="js/background.cycle.js"></script> 
+<script type="text/javascript" src="js/background.cycle-custom.js"></script> 
+<script src="js/html5shiv.js" type="text/javascript"></script> 
+
+<!-- Typed --> 
+<!-- Typed jS --> 
+
+<script src="js/typed.js" type="text/javascript"></script> 
+<script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            backDelay: 1000,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+</body>
+</html>
